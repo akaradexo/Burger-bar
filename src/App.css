@@ -1,0 +1,370 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap');
+
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 14px;
+}
+
+body {
+  font-family: 'Poppins', sans-serif;
+  background-color: #d9d9d9;
+background-image: linear-gradient(315deg, #d9d9d9 0%, #f6f2f2 74%);
+  color: whitesmoke;
+  margin: 0;
+}
+/* display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center; */
+.nav-container{
+  position: top;
+  padding: 12px 100px;
+}
+@media (max-width:610px){
+  .nav-container{
+    padding: 12px 30px;
+  }
+}
+@media (max-width:465px){
+  .nav-container{
+    padding: 12px 0px;
+  }
+  .right{
+    padding: 0 0px;
+  }
+  .link{
+  padding: 0 5px;
+  }
+  .container{
+    padding: 12px 70px;
+  }
+}
+.nav-wrapper{
+  background-color: black;
+  width: 100%;
+  position: fixed;
+  z-index: 9999;
+}
+.container{
+  padding: 12px 130px;
+}
+@media (max-width:610px){
+  .container{
+    padding: 12px 30px;
+  }
+}
+.brand-logo{
+  text-decoration: none;
+  color: whitesmoke;
+  cursor: pointer;
+  letter-spacing: 2px;
+  font-size: 20px;
+  font-weight: 500;
+}
+ul{
+  list-style-type: none;
+}
+.right{
+  float: right;
+  padding: 0 20px;
+  display: flex;
+}
+.link{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-decoration: none;
+  color: whitesmoke;
+  float: right;
+  padding: 0 20px;
+  font-size: 20px;
+  font-weight: 300;
+}
+@media (max-width:405px){
+  .link{
+    padding: 0px 8px;
+  }
+  .container{
+    padding: 12px 5px;
+  }
+}
+.link:hover{
+  color: red;
+}
+
+.box{ 
+  display: grid;
+  margin-top: 70px;
+  grid-template-columns: repeat(3, 1fr);
+  justify-items: center;
+  grid-gap: 20px;
+}
+@media (max-width:1100px){
+  .box{
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+@media (max-width:767px){
+  .box{
+    grid-template-columns: 1fr;
+  }
+}
+.card{
+  width: 300px;
+  position: relative;
+    margin: .5rem 0 1rem 0;
+    background-color: #000000;
+    background-image: linear-gradient(315deg, #000000 0%, #414141 74%);
+    border-radius: 10px;
+    color: #fff;
+    box-shadow: 0px 0px 20px -2px rgba(0,0,0,0.75);
+    
+}
+.card-image img{
+  width: 300px;
+  height: auto;
+  border-bottom-right-radius: 30px;
+  border-top-right-radius: 10px;
+  border-top-left-radius: 10px;
+  border-bottom-left-radius: 30px;
+
+}
+.card-title{
+  letter-spacing: 2px;
+  font-size: 20px;
+  font-weight: 600;
+}
+.card-content{
+  padding: 8px 0px 8px 10px;
+}
+.btn-add{
+float: right;
+margin: 0 20px;
+width: 50px;
+height: 50px;
+border-radius: 50px;
+border: none;
+cursor: pointer;
+background-color: transparent;
+transition-duration: 0.4s;
+  overflow: hidden;
+}
+.btn-add:hover{
+  background-color: white;
+}
+.btn-remove{
+  padding: 4px 10px;
+  border-radius: 50px;
+  border: none;
+  background-color: whitesmoke;
+  font-weight: bolder;
+
+}
+.btn-remove:hover{
+  color: lightcoral;
+}
+.btn-checkout{
+  background-color: black;
+  padding: 8px 25px;
+  border-radius: 50px;
+  border: none;
+  color: red;
+  font-size: 20px;
+  font-weight:bolder;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+}
+.btn-checkout:hover{
+  background-color: red;
+  color:black
+}
+.cart{
+  margin-top: 60px;
+  color: black;
+}
+.collection{
+  box-shadow: 0px 0px 5px -3px rgba(0,0,0,0.75);
+  border-radius: 10px;
+  background-color: #2d3436;
+  background-image: linear-gradient(315deg, #2d3436 0%, #000000 74%);
+}
+.collection-item{
+  display: flex;
+  flex-direction: row;
+  padding: 10px;
+  margin: 5px;
+}
+
+.item-img img{
+  width: auto;
+  height: 200px;
+  border-radius: 25px;
+}
+.item-desc{
+  padding: 20px;
+}
+.item-desc .title{
+  color: whitesmoke;
+  letter-spacing: 2px;
+  font-size: 20px;
+  font-weight: 600;
+}
+.item-desc p{
+  color: whitesmoke;
+}
+
+
+footer{
+  position: bottom;
+  bottom: 0;
+ }
+ .footer-distributed{
+  background-color:black;
+  letter-spacing: 2px;
+  box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.12);
+  box-sizing: border-box;
+  width: 100%;
+  text-align: left;
+  font: bold 16px sans-serif;
+  padding: 55px 50px;
+  margin-top: 80px;
+ }
+  
+ .footer-distributed .footer-left,
+ .footer-distributed .footer-center,
+ .footer-distributed .footer-right{
+  display: inline-block;
+  vertical-align: top;
+ }
+  
+ .footer-distributed .footer-left{
+  width: 40%;
+ }
+  
+  
+ .footer-distributed h3 {
+   font-size: 80px;
+ }
+  
+  
+ .footer-distributed .footer-links{
+  color:  #ffffff;
+  margin: 20px 0 12px;
+  padding: 0;
+ }
+  
+ .footer-distributed .footer-links a{
+  display:inline-block;
+  line-height: 1.8;
+  text-decoration: none;
+  color:  inherit;
+  padding: 20px;
+ }
+  
+ .footer-distributed .footer-company-name{
+  color:  #8f9296;
+  font-size: 14px;
+  font-weight: normal;
+  margin: 0;
+ }
+  
+  
+ .footer-distributed .footer-center{
+  width: 35%;
+ }
+  
+
+  
+ .footer-distributed .footer-center p{
+  display: inline-block;
+  color: #ffffff;
+  vertical-align: middle;
+  margin:0;
+  padding: 12px;
+ }
+  
+ .footer-distributed .footer-center p span{
+  display:block;
+  font-weight: normal;
+  font-size:14px;
+  line-height:2;
+ }
+  
+ .footer-distributed .footer-center p a{
+  color:  blue;
+  text-decoration: none;;
+ }
+  
+ .footer-distributed .footer-right{
+  width: 20%;
+ }
+  
+ .footer-distributed .footer-company-about{
+  line-height: 20px;
+  color:  #92999f;
+  font-size: 13px;
+  font-weight: normal;
+  margin: 0;
+ }
+  
+ .footer-distributed .footer-company-about span{
+  display: block;
+  color:  #ffffff;
+  font-size: 14px;
+  font-weight: bold;
+  margin-bottom: 20px;
+ }
+  
+ .footer-distributed .footer-icons{
+  margin-top: 25px;
+ }
+  
+ .footer-distributed .footer-icons a{
+  display: inline-block;
+  width: 35px;
+  height: 35px;
+  cursor: pointer;
+  background-color:  #33383b;
+  border-radius: 2px;
+  
+  font-size: 20px;
+  color: #ffffff;
+  text-align: center;
+  line-height: 35px;
+  
+  margin-right: 3px;
+  margin-bottom: 5px;
+ }
+  
+  
+ @media (max-width: 880px) {
+  
+  .footer-distributed{
+  font: bold 14px sans-serif;
+  
+  }
+  
+  .footer-distributed .footer-left,
+  .footer-distributed .footer-center,
+  .footer-distributed .footer-right{
+  display: block;
+  width: 100%;
+  margin-bottom: 40px;
+  text-align: center;
+  }
+  
+  .footer-distributed .footer-center i{
+  margin-left: 0;
+  }
+  .main {
+  line-height: normal;
+  font-size: auto;
+  }
+  
+ }
